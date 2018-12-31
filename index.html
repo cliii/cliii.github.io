@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <title>无标题文档</title>
 <script src="file:///C|/Users/chenli/AppData/Roaming/Adobe/Dreamweaver CC 2018/zh_CN/Configuration/Temp/Assets/eamA0B.tmp/jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="file:///C|/Users/chenli/AppData/Roaming/Adobe/Dreamweaver CC 2018/zh_CN/Configuration/Temp/Assets/eamA0B.tmp/jQueryAssets/jquery-ui-effects.custom.min.js"></script>
 <script type="text/javascript">
-function MM_goToURL() { //v3.0
-  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+function MM_DW_effectBlind(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
 }
 </script>
 </head>
 
-<body onLoad="MM_goToURL('parent','www.baidu.com');return document.MM_returnValue">
+<body onclick="MM_DW_effectBlind($(this),'hide','blind','up',1000)" onmousedown="MM_popupMsg('hhh\r')">
 急急急
 </body>
 </html>
